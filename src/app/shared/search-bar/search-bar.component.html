@@ -1,0 +1,24 @@
+<div class="search-form-container"></div>
+<form #searchForm class="search-form" (submit)="onSubmit()" (click)="hasBeenClicked = true">
+  <input
+    [(ngModel)]="searchTerm"
+    name="searchTerm"
+    id="searchInput"
+    class="search-form__input"
+    type="text"
+    placeholder="Search..."
+  />
+  <div class="search-form__vl"></div>
+  <select
+    #categorySelect
+    class="search-form__select"
+    (change)="selectedCategoryName=categorySelect.value">
+    <option selected value="all">All Categories</option>
+    <option *ngFor="let category of categoryNames" [value]="category">
+      {{category}}
+    </option>
+  </select>
+  <div class="search-form__vl"></div>
+  <button class="search-form__btn" type="submit"><i class="fa fa-search"></i></button>
+</form>
+<button #miniFormBtn class="search-form-mini btn" (click)="toggleSearchForm($event)"><i class="fa fa-search"></i></button>

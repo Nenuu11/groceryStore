@@ -1,0 +1,9 @@
+@import '../../../assets/sass/variables';
+
+.logo {
+  max-width: 5rem;
+
+  @media (min-width: $landscape) {
+    max-width: 6rem;
+  }
+}

@@ -1,0 +1,21 @@
+.category{
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    &-item{
+        &-hovered{
+            position: absolute;
+            left: 0;
+            top: 0;
+            visibility: hidden;
+        }
+    }
+    &:hover{
+        .category-item{
+            visibility: hidden;
+        }
+        .category-item-hovered{
+            visibility: visible;
+        }
+    }
+}

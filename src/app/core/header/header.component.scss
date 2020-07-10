@@ -1,0 +1,53 @@
+@import '../../../assets/sass/variables';
+
+.header {
+  display: flex;
+  height: 6rem;
+  background-color: $primary-bg-color;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.7rem;
+  border-bottom: 1px solid $primary-color;
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__contactUs{
+    align-items: center;
+    font-size: 0.8rem;
+    margin-right: 2rem;
+    padding-top: 8px;
+    p{
+      margin-bottom: 0px;
+    }
+    
+  }
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+.nav-item{
+  margin-right: 10px;
+}
+
+.nav-link{
+  color: black;
+}
+
+app-shopping-cart {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  padding-top: 8px;
+}
+
+app-user-links {
+  display: flex;
+  align-items: center;
+}
+
+
+

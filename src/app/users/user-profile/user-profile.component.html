@@ -1,0 +1,18 @@
+<div class="container">
+
+    <div class="card account-details mt-5 ">
+        <div class="card-header ">
+            <h5 class="card-title">Account Details</h5>
+        </div>
+        <div class="card-body">
+            <img [src]="user.imgUrl"  alt="user profile image" srcset="">
+            <p class="card-text"><strong>First Name: </strong>{{user.firstName}}</p>
+            <p class="card-text"><strong>Last Name: </strong>{{user.lastName}}</p>
+            <p class="card-text"><strong>Email: </strong>{{user.email}}</p>
+            <p class="card-text" *ngIf='user.phoneNumber'><strong>Phone Number: </strong>{{user.phoneNumber}}</p>
+            <p class="card-text" *ngIf='user.address'><strong>Address: </strong>{{user.address}}</p>
+        </div>
+    </div>
+
+    <app-orders-container></app-orders-container>
+</div>
